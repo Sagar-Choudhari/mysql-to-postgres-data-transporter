@@ -1,0 +1,11 @@
+Rows in table consumptiondetails: 52954
+Error retrieving primary key column name: schema "elab" does not exist
+LINE 4:             WHERE i.indrelid = 'elab.consumptiondetails'::re...
+                                       ^
+
+Primary Key: None
+processing table => consumptiondetails
+[]
+Row: {'tcid': 7, 'nelID': None, 'tJobId': 'PUN-2021-22-01124', 'nInvoiceNo': None, 'nInvDetNo': 318, 'nIterationNo': 1, 'cQty': 1.2, 'cPurQty': None, 'cCleanQty': 0.0, 'tUnit': None, 'dtDate': datetime.date(2021, 9, 14), 'tConsumptionName': 'Innor Sand Grade-III', 'tNote': None, 'tFY': '2021-22', 'nlocationId': 107, 'dtstamp': datetime.datetime(2021, 9, 14, 12, 53, 10), 'tEnterBy': '172.17.1.225 gkd', 'tModifyBy': None, 'openingBalance': None, 'actualBalance': None, 'nsubTestId': None, 'tdeleteStatus': None}
+None
+Finished Migrating

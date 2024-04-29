@@ -1,0 +1,658 @@
+Processing table: consumptiondetails
+52954
+processing table => consumptiondetails
+['"tcid"', '"nelid"', '"tjobid"', '"ninvoiceno"', '"ninvdetno"', '"niterationno"', '"cqty"', '"cpurqty"', '"ccleanqty"', '"tunit"', '"dtdate"', '"tconsumptionname"', '"tnote"', '"tfy"', '"nlocationid"', '"dtstamp"', '"tenterby"', '"tmodifyby"', '"openingbalance"', '"actualbalance"', '"nsubtestid"', '"tdeletestatus"']
+Executing SQL: INSERT INTO elab.consumptiondetails ("tcid", "nelid", "tjobid", "ninvoiceno", "ninvdetno", "niterationno", "cqty", "cpurqty", "ccleanqty", "tunit", "dtdate", "tconsumptionname", "tnote", "tfy", "nlocationid", "dtstamp", "tenterby", "tmodifyby", "openingbalance", "actualbalance", "nsubtestid", "tdeletestatus") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "tcid" of relation "consumptiondetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: consumptioninwordmaster
+0
+Processing table: consumptionmaster
+10
+processing table => consumptionmaster
+['"nelid"', '"nConsumableId"', '"ntestId"', '"nsubTestId"', '"tConsumable"', '"nQty"']
+Executing SQL: INSERT INTO elab.consumptionmaster ("nelid", "nConsumableId", "ntestId", "nsubTestId", "tConsumable", "nQty") VALUES (%s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None)
+Error executing SQL: null value in column "nConsumableId" of relation "consumptionmaster" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null).
+
+Processing table: contractormaster
+7434
+processing table => contractormaster
+['"nelID"', '"nCID"', '"tContractorId"', '"tContractorName"', '"tCompanyname"', '"tRegAddress"', '"tOfficeAddress"', '"nPhNo1"', '"nPhNo2"', '"tEmailId1"', '"tEmailId2"', '"tRegNo"', '"tExciseNo"', '"tMVATTINNo"', '"tCSTNo"', '"tPANNo"', '"tServiceTaxNo"', '"tEnteredBy"', '"tModifyBy"', '"tDeleteStatus"', '"tLocation"', '"Longittude"', '"Latittude"', '"tClassContractor"', '"dtStamp"', '"nLocationID"', '"nCloudContractorId"', '"tExportStatus"', '"dtExportDate"', '"dtImportDate"']
+Executing SQL: INSERT INTO elab.contractormaster ("nelID", "nCID", "tContractorId", "tContractorName", "tCompanyname", "tRegAddress", "tOfficeAddress", "nPhNo1", "nPhNo2", "tEmailId1", "tEmailId2", "tRegNo", "tExciseNo", "tMVATTINNo", "tCSTNo", "tPANNo", "tServiceTaxNo", "tEnteredBy", "tModifyBy", "tDeleteStatus", "tLocation", "Longittude", "Latittude", "tClassContractor", "dtStamp", "nLocationID", "nCloudContractorId", "tExportStatus", "dtExportDate", "dtImportDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nCID" of relation "contractormaster" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: deletetestlog
+8015
+processing table => deletetestlog
+[]
+Executing SQL: INSERT INTO elab.deletetestlog () VALUES ()
+Parameters: ()
+Error executing SQL: syntax error at or near ")"
+LINE 1: INSERT INTO elab.deletetestlog () VALUES ()
+                                        ^
+
+Processing table: designationmaster
+7
+processing table => designationmaster
+['"nelID"', '"tDesignation"']
+Executing SQL: INSERT INTO elab.designationmaster ("nelID", "tDesignation") VALUES (%s, %s)
+Parameters: (None, None)
+Executing SQL: INSERT INTO elab.designationmaster ("nelID", "tDesignation") VALUES (%s, %s)
+Parameters: (None, None)
+Executing SQL: INSERT INTO elab.designationmaster ("nelID", "tDesignation") VALUES (%s, %s)
+Parameters: (None, None)
+Executing SQL: INSERT INTO elab.designationmaster ("nelID", "tDesignation") VALUES (%s, %s)
+Parameters: (None, None)
+Executing SQL: INSERT INTO elab.designationmaster ("nelID", "tDesignation") VALUES (%s, %s)
+Parameters: (None, None)
+Executing SQL: INSERT INTO elab.designationmaster ("nelID", "tDesignation") VALUES (%s, %s)
+Parameters: (None, None)
+Executing SQL: INSERT INTO elab.designationmaster ("nelID", "tDesignation") VALUES (%s, %s)
+Parameters: (None, None)
+Processing table: formreportlink
+201
+processing table => formreportlink
+['"nelid"', '"tmaintest"', '"nsubtestid"', '"tsubtest"', '"tobservationlink"', '"tPageName"', '"nReportId"', '"tReportName"', '"tReportFunction"', '"tReportLink"', '"tReportCount"', '"tObservationPrint"', '"tSubreportCount"', '"tRreportTable"', '"tDetailsTable"', '"tNewRId"']
+Executing SQL: INSERT INTO elab.formreportlink ("nelid", "tmaintest", "nsubtestid", "tsubtest", "tobservationlink", "tPageName", "nReportId", "tReportName", "tReportFunction", "tReportLink", "tReportCount", "tObservationPrint", "tSubreportCount", "tRreportTable", "tDetailsTable", "tNewRId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "formreportlink" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: formreportlinkold
+0
+Processing table: generalledger
+309
+processing table => generalledger
+['"nelid"', '"ncontractorId"', '"dtDate"', '"cjamaAmt"', '"cNaveAmt"', '"tType"', '"nTrNo"', '"dtTrDate"', '"nddNo"', '"dtDDDate"', '"tBank"', '"tJobId"', '"nJobId"', '"nInvoiceNo"', '"nWorkId"', '"tTotalWorkIds"', '"tNote"', '"tFY"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.generalledger ("nelid", "ncontractorId", "dtDate", "cjamaAmt", "cNaveAmt", "tType", "nTrNo", "dtTrDate", "nddNo", "dtDDDate", "tBank", "tJobId", "nJobId", "nInvoiceNo", "nWorkId", "tTotalWorkIds", "tNote", "tFY", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "generalledger" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: invoice
+47716
+processing table => invoice
+['"nelid"', '"ntestrecoid"', '"ninvoiceno"', '"tinvoiceno"', '"njobid"', '"tjobid"', '"tcontractorid"', '"tworkid"', '"tworkmaterialtype"', '"ttrtype"', '"tcontractorname"', '"tworkorderdetails"', '"tcontractortype"', '"tddtrno"', '"tbankdetails"', '"dtdd"', '"tpaymentgatewayno"', '"cpaymentgatewayamt"', '"dtpaymentgatewaydate"', '"tpayeename"', '"cinvoiceamt"', '"dtinvoice"', '"tpaymentstatus"', '"ttestcomstatus"', '"dttestcompletion"', '"dtpaymentexpiry"', '"dtmaterialinexpiry"', '"tagreementno"', '"dtagreementdate"', '"cagreementamt"', '"trefletterno"', '"dfrefletterdate"', '"tactype"', '"tfy"', '"temail"', '"tmobile"', '"dtmaterailin"', '"tcheckedby"', '"ttestedby"', '"tfwdtoaro"', '"trechkremark"', '"trecheck"', '"dtfwdtoaro"', '"tauthenticated"', '"tuploaded"', '"tforfietedstatus"', '"ttestexpired"', '"tmaterialexpired"', '"toutwardno"', '"dtoutwarddate"', '"dtautoenddate"', '"dtactualenddate"', '"tdivision"', '"tsubdivision"', '"tinwardremark"', '"isminward"', '"tmatexportstatus"', '"dtstamp"', '"nlocationid"', '"tenterby"', '"tmodifyby"', '"tdeletestatus"', '"nrec_src_type"', '"ncloudinvoiceid"', '"nuploadedtocloud"', '"tdsexportstatus"', '"created_by"', '"treportfilename"', '"dtexportdate"', '"dtimportdate"', '"insertiontype"', '"status_mob"', '"nEmpId"']
+Executing SQL: INSERT INTO elab.invoice ("nelid", "ntestrecoid", "ninvoiceno", "tinvoiceno", "njobid", "tjobid", "tcontractorid", "tworkid", "tworkmaterialtype", "ttrtype", "tcontractorname", "tworkorderdetails", "tcontractortype", "tddtrno", "tbankdetails", "dtdd", "tpaymentgatewayno", "cpaymentgatewayamt", "dtpaymentgatewaydate", "tpayeename", "cinvoiceamt", "dtinvoice", "tpaymentstatus", "ttestcomstatus", "dttestcompletion", "dtpaymentexpiry", "dtmaterialinexpiry", "tagreementno", "dtagreementdate", "cagreementamt", "trefletterno", "dfrefletterdate", "tactype", "tfy", "temail", "tmobile", "dtmaterailin", "tcheckedby", "ttestedby", "tfwdtoaro", "trechkremark", "trecheck", "dtfwdtoaro", "tauthenticated", "tuploaded", "tforfietedstatus", "ttestexpired", "tmaterialexpired", "toutwardno", "dtoutwarddate", "dtautoenddate", "dtactualenddate", "tdivision", "tsubdivision", "tinwardremark", "isminward", "tmatexportstatus", "dtstamp", "nlocationid", "tenterby", "tmodifyby", "tdeletestatus", "nrec_src_type", "ncloudinvoiceid", "nuploadedtocloud", "tdsexportstatus", "created_by", "treportfilename", "dtexportdate", "dtimportdate", "insertiontype", "status_mob", "nEmpId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "ninvoiceno" of relation "invoice" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: invoicedetails
+210138
+processing table => invoicedetails
+['"nelid"', '"ninvdetno"', '"ntestrecoid"', '"dtautoenddate"', '"dtactualenddate"', '"tmaincat"', '"ttestname"', '"nsubtestid"', '"tsubtestname"', '"nmaterialid"', '"tmaterialname"', '"nqty"', '"crate"', '"damt"', '"tremarksthickness"', '"tdiamensionpercent"', '"dtcastingdate"', '"dtmaterialin"', '"tcheckedby"', '"ttestedby"', '"tlabenggname"', '"tobservationremark"', '"nInvoiceNo"', '"njobid"', '"tnote"', '"tmaterialin"', '"ttestresult"', '"nqtycompleted"', '"ncloudinvdetno"']
+Executing SQL: INSERT INTO elab.invoicedetails ("nelid", "ninvdetno", "ntestrecoid", "dtautoenddate", "dtactualenddate", "tmaincat", "ttestname", "nsubtestid", "tsubtestname", "nmaterialid", "tmaterialname", "nqty", "crate", "damt", "tremarksthickness", "tdiamensionpercent", "dtcastingdate", "dtmaterialin", "tcheckedby", "ttestedby", "tlabenggname", "tobservationremark", "nInvoiceNo", "njobid", "tnote", "tmaterialin", "ttestresult", "nqtycompleted", "ncloudinvdetno") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "ninvdetno" of relation "invoicedetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: labempmaster
+37
+processing table => labempmaster
+['"nelID"', '"nEnggID"', '"tEnggName"', '"nLocationID"', '"tDesignation"', '"nContactNo1"', '"nContactNo2"', '"tEmailid1"', '"tEmailid2"', '"dtStamp"', '"tDeleteStatus"', '"tEnteredBy"', '"tModifyBy"', '"dtJoinDate"', '"tProcess"', '"tInitialLetter"', '"sms_status"', '"email_status"']
+Executing SQL: INSERT INTO elab.labempmaster ("nelID", "nEnggID", "tEnggName", "nLocationID", "tDesignation", "nContactNo1", "nContactNo2", "tEmailid1", "tEmailid2", "dtStamp", "tDeleteStatus", "tEnteredBy", "tModifyBy", "dtJoinDate", "tProcess", "tInitialLetter", "sms_status", "email_status") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nEnggID" of relation "labempmaster" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: linechart
+0
+Processing table: locationmaster
+5
+processing table => locationmaster
+['"nelID"', '"nLocationID"', '"nPWDMaster"', '"tLabName"', '"tAddress"', '"tEmailId"', '"tPhoneNo"', '"tReportHead"', '"tSubReportHead"', '"tBottomWaterMark"', '"tinv_Prefix"', '"tinv_Prefix1"', '"tinv_Prefix2"', '"tjobId_prefix"', '"tjobId_prefix1"', '"tjobId_prefix2"', '"tToPayName"', '"tOutwardNo_Prefix"', '"tYearFormat"', '"tConformationBox"', '"tDSFile"', '"tDSDLLPath"', '"dtStamp"', '"tDeleteStatus"', '"tEnteredBy"', '"tModifyBy"', '"tReportBelowOutNoNOte"', '"tReportEmail"', '"TDSSign1"', '"TDSSIGN2"', '"tclientDSPath"', '"tserverDSPath"']
+Executing SQL: INSERT INTO elab.locationmaster ("nelID", "nLocationID", "nPWDMaster", "tLabName", "tAddress", "tEmailId", "tPhoneNo", "tReportHead", "tSubReportHead", "tBottomWaterMark", "tinv_Prefix", "tinv_Prefix1", "tinv_Prefix2", "tjobId_prefix", "tjobId_prefix1", "tjobId_prefix2", "tToPayName", "tOutwardNo_Prefix", "tYearFormat", "tConformationBox", "tDSFile", "tDSDLLPath", "dtStamp", "tDeleteStatus", "tEnteredBy", "tModifyBy", "tReportBelowOutNoNOte", "tReportEmail", "TDSSign1", "TDSSIGN2", "tclientDSPath", "tserverDSPath") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nLocationID" of relation "locationmaster" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: locationwisetestmaster
+533
+processing table => locationwisetestmaster
+['"nelid"', '"nSubTestID"', '"nTestID"', '"tSubTestName"', '"nDays"', '"cRate"', '"tSubTestAbbrivation"', '"dtStamp"', '"tDeleteStatus"', '"nLocationID"', '"tEnteredBy"', '"tModifyBy"']
+Executing SQL: INSERT INTO elab.locationwisetestmaster ("nelid", "nSubTestID", "nTestID", "tSubTestName", "nDays", "cRate", "tSubTestAbbrivation", "dtStamp", "tDeleteStatus", "nLocationID", "tEnteredBy", "tModifyBy") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "locationwisetestmaster" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: logmaster
+34769
+processing table => logmaster
+['"nelid"', '"tUsername"', '"tAutorisedPerson"', '"dtstamp"', '"niterationno"', '"tJobId"', '"nInvoiceNo"', '"nInvDetNo"', '"tIP"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.logmaster ("nelid", "tUsername", "tAutorisedPerson", "dtstamp", "niterationno", "tJobId", "nInvoiceNo", "nInvDetNo", "tIP", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "logmaster" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null).
+
+Processing table: mailsmslog
+89484
+processing table => mailsmslog
+['"nID"', '"tJobID"', '"tInvoiceNo"', '"nCloudTestRecoID"', '"tMobileRecNo"', '"tWorkID"', '"tEmailID"', '"tMobileNo"', '"tEmailStatus"', '"tEmailNote"', '"tSMSStatus"', '"tSMSNote"', '"tReportName"', '"dtEmail"', '"dtSMS"', '"tSubject"', '"tType"', '"nLocationID"', '"dtstamp"', '"tExportStatus"']
+Executing SQL: INSERT INTO elab.mailsmslog ("nID", "tJobID", "tInvoiceNo", "nCloudTestRecoID", "tMobileRecNo", "tWorkID", "tEmailID", "tMobileNo", "tEmailStatus", "tEmailNote", "tSMSStatus", "tSMSNote", "tReportName", "dtEmail", "dtSMS", "tSubject", "tType", "nLocationID", "dtstamp", "tExportStatus") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nID" of relation "mailsmslog" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: main
+0
+Processing table: materialmaster
+214
+processing table => materialmaster
+['"nMat_Id"', '"tMat_Name"', '"tMat_Desc"', '"nCompStrengthDays"', '"tSieve"', '"tMinVal"', '"tMaxVal"']
+Executing SQL: INSERT INTO elab.materialmaster ("nMat_Id", "tMat_Name", "tMat_Desc", "nCompStrengthDays", "tSieve", "tMinVal", "tMaxVal") VALUES (%s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nMat_Id" of relation "materialmaster" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null).
+
+Processing table: monthinfo
+180
+processing table => monthinfo
+['"nid"', '"nMonth"', '"tMonth"', '"nSR"', '"FY"', '"LastDateForMPR"']
+Executing SQL: INSERT INTO elab.monthinfo ("nid", "nMonth", "tMonth", "nSR", "FY", "LastDateForMPR") VALUES (%s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None)
+Error executing SQL: null value in column "nid" of relation "monthinfo" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null).
+
+Processing table: mpr1old
+0
+Processing table: mpr_jobreceivedold
+0
+Processing table: mpr_outwardold
+0
+Processing table: mpr_pendingold
+0
+Processing table: ob_cbrtest
+0
+Processing table: ob_crbdetails
+0
+Processing table: ob_crbiterationdetails
+7300
+processing table => ob_crbiterationdetails
+['"nelid"', '"ncrb_detailsId"', '"nInvDetNo"', '"nIterationNo"', '"dPenetrationin_mm"', '"dDialGaugeReadingORLoadinKN"', '"dLoadInKG"', '"dCorretionFactor"', '"dCRBValue"', '"dResult1"', '"dResult2"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.ob_crbiterationdetails ("nelid", "ncrb_detailsId", "nInvDetNo", "nIterationNo", "dPenetrationin_mm", "dDialGaugeReadingORLoadinKN", "dLoadInKG", "dCorretionFactor", "dCRBValue", "dResult1", "dResult2", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "ob_crbiterationdetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: ob_wood
+359
+processing table => ob_wood
+['"nelId"', '"nObervartionId"', '"tJobId"', '"nInvDetNo"', '"dtReceiptDate"', '"nTotSample"', '"tNote"', '"dtStartDate"', '"dtEndDate"', '"tChkedBy"', '"tTestedBy"', '"tFinalised"', '"tEnteredBy"', '"tModifyBy"', '"dtstamp"', '"tDeleteStatus"', '"nLocationId"', '"tOutNo"', '"dtOutDate"', '"tMaterial"']
+Executing SQL: INSERT INTO elab.ob_wood ("nelId", "nObervartionId", "tJobId", "nInvDetNo", "dtReceiptDate", "nTotSample", "tNote", "dtStartDate", "dtEndDate", "tChkedBy", "tTestedBy", "tFinalised", "tEnteredBy", "tModifyBy", "dtstamp", "tDeleteStatus", "nLocationId", "tOutNo", "dtOutDate", "tMaterial") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervartionId" of relation "ob_wood" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: ob_wooddetails
+365
+processing table => ob_wooddetails
+['"nelId"', '"nObservationId"', '"nInvDetNo"', '"nSampleNo"', '"dLength"', '"dWidth"', '"dThickness"', '"dSpeVol"', '"dM0"', '"dDensity"', '"dM1"', '"dMoist_Content"', '"tSample_Status"', '"tRemark"', '"dtStamp"', '"tEnterBy"', '"tModifyBy"', '"tFinalised"', '"nLocastionId"', '"nIterationNo"', '"dtEndDate"', '"dtStartDate"']
+Executing SQL: INSERT INTO elab.ob_wooddetails ("nelId", "nObservationId", "nInvDetNo", "nSampleNo", "dLength", "dWidth", "dThickness", "dSpeVol", "dM0", "dDensity", "dM1", "dMoist_Content", "tSample_Status", "tRemark", "dtStamp", "tEnterBy", "tModifyBy", "tFinalised", "nLocastionId", "nIterationNo", "dtEndDate", "dtStartDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelId" of relation "ob_wooddetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaggflakiness
+20390
+processing table => obaggflakiness
+['"nelid"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nNoOfSamples"', '"tLocation"', '"tRemark"', '"dtStartDate"', '"dtEndDate"', '"dtstamp"', '"tChkedBy"', '"tTestedBy"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obaggflakiness ("nelid", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nNoOfSamples", "tLocation", "tRemark", "dtStartDate", "dtEndDate", "dtstamp", "tChkedBy", "tTestedBy", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervationId" of relation "obaggflakiness" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaggflakinessdetails
+23191
+processing table => obaggflakinessdetails
+['"nelid"', '"nAggFlkDetailsId"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tFinalised"', '"tLocation"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obaggflakinessdetails ("nelid", "nAggFlkDetailsId", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nIterationNo", "tFinalised", "tLocation", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nAggFlkDetailsId" of relation "obaggflakinessdetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaggflankinessiterations
+185584
+processing table => obaggflankinessiterations
+['"nelid"', '"nInvDetNo"', '"nAggFlkDetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tSieve"', '"tPassing"', '"tRetain"', '"dFI1"', '"dFI2"', '"dFI3"', '"dEI1"', '"dEI2"', '"dEI3"', '"dFI1Total"', '"dFI3Total"', '"dEI1Total"', '"dEI3Total"', '"dFIResult1"', '"dFIResult2"', '"dEIResult1"', '"dFIEI"', '"dExtra1"', '"dExtra2"', '"dExtra3"', '"tFinalised"', '"nLocationId"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"', '"tLocation"']
+Executing SQL: INSERT INTO elab.obaggflankinessiterations ("nelid", "nInvDetNo", "nAggFlkDetailsId", "nObervationId", "tJobId", "nIterationNo", "tSieve", "tPassing", "tRetain", "dFI1", "dFI2", "dFI3", "dEI1", "dEI2", "dEI3", "dFI1Total", "dFI3Total", "dEI1Total", "dEI3Total", "dFIResult1", "dFIResult2", "dEIResult1", "dFIEI", "dExtra1", "dExtra2", "dExtra3", "tFinalised", "nLocationId", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate", "tLocation") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obaggflankinessiterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaggliquid
+32
+processing table => obaggliquid
+['"nelid"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nNoOfSamples"', '"tMaterial"', '"tLocation"', '"dtStartDate"', '"dtEndDate"', '"dtstamp"', '"tChkedBy"', '"tTestedBy"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obaggliquid ("nelid", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nNoOfSamples", "tMaterial", "tLocation", "dtStartDate", "dtEndDate", "dtstamp", "tChkedBy", "tTestedBy", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervationId" of relation "obaggliquid" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaggliquiddetails
+73
+processing table => obaggliquiddetails
+['"nelid"', '"nobAggLiquidDetailsId"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tFinalised"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obaggliquiddetails ("nelid", "nobAggLiquidDetailsId", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nIterationNo", "tFinalised", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nobAggLiquidDetailsId" of relation "obaggliquiddetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaggliquididiterations
+73
+processing table => obaggliquididiterations
+['"nelid"', '"nInvDetNo"', '"nobAggLiquidDetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tMaterial"', '"tLocation"', '"dSR1LL1"', '"dSR1LL2"', '"dSR1LL3"', '"dSR1PL4"', '"dSR1PL5"', '"dSR2LL1"', '"dSR2LL2"', '"dSR2LL3"', '"dSR2PL4"', '"dSR2PL5"', '"dSR3LL1"', '"dSR3LL2"', '"dSR3LL3"', '"dSR3PL4"', '"dSR3PL5"', '"dSR4LL1"', '"dSR4LL2"', '"dSR4LL3"', '"dSR4PL4"', '"dSR4PL5"', '"dSR5LL1"', '"dSR5LL2"', '"dSR5LL3"', '"dSR5PL4"', '"dSR5PL5"', '"dSR6LL1"', '"dSR6LL2"', '"dSR6LL3"', '"dSR6PL4"', '"dSR6PL5"', '"dSR7LL1"', '"dSR7LL2"', '"dSR7LL3"', '"dSR7PL4"', '"dSR7PL5"', '"dSR8LL1"', '"dSR8LL2"', '"dSR8LL3"', '"dSR8PL4"', '"dSR8PL5"', '"dLL"', '"dPL"', '"dPI"', '"tRemark"', '"tIsNonPlastic"', '"tFinalised"', '"nLocationId"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"']
+Executing SQL: INSERT INTO elab.obaggliquididiterations ("nelid", "nInvDetNo", "nobAggLiquidDetailsId", "nObervationId", "tJobId", "nIterationNo", "tMaterial", "tLocation", "dSR1LL1", "dSR1LL2", "dSR1LL3", "dSR1PL4", "dSR1PL5", "dSR2LL1", "dSR2LL2", "dSR2LL3", "dSR2PL4", "dSR2PL5", "dSR3LL1", "dSR3LL2", "dSR3LL3", "dSR3PL4", "dSR3PL5", "dSR4LL1", "dSR4LL2", "dSR4LL3", "dSR4PL4", "dSR4PL5", "dSR5LL1", "dSR5LL2", "dSR5LL3", "dSR5PL4", "dSR5PL5", "dSR6LL1", "dSR6LL2", "dSR6LL3", "dSR6PL4", "dSR6PL5", "dSR7LL1", "dSR7LL2", "dSR7LL3", "dSR7PL4", "dSR7PL5", "dSR8LL1", "dSR8LL2", "dSR8LL3", "dSR8PL4", "dSR8PL5", "dLL", "dPL", "dPI", "tRemark", "tIsNonPlastic", "tFinalised", "nLocationId", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obaggliquididiterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaggregate
+28359
+processing table => obaggregate
+['"nelid"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nNoOfSamples"', '"tLocation"', '"tRemark"', '"dtStartDate"', '"dtEndDate"', '"dtstamp"', '"tChkedBy"', '"tTestedBy"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obaggregate ("nelid", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nNoOfSamples", "tLocation", "tRemark", "dtStartDate", "dtEndDate", "dtstamp", "tChkedBy", "tTestedBy", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervationId" of relation "obaggregate" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaggregatedetails
+29386
+processing table => obaggregatedetails
+['"nelid"', '"nAggDetailsId"', '"dtReceiptDate"', '"nInvDetNo"', '"naggdetailsno"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tFinalised"', '"tLocation"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obaggregatedetails ("nelid", "nAggDetailsId", "dtReceiptDate", "nInvDetNo", "naggdetailsno", "nObervationId", "tJobId", "nIterationNo", "tFinalised", "tLocation", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nAggDetailsId" of relation "obaggregatedetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaggregateiterations
+29364
+processing table => obaggregateiterations
+['"nelid"', '"nInvDetNo"', '"nAggDetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tLocation"', '"tSieve"', '"dCVT1"', '"dCVT2"', '"dCVT3"', '"dCVT4"', '"dIVT1"', '"dIVT2"', '"dIVT3"', '"dIVT4"', '"dSGWAT1"', '"dSGWAT2"', '"dSGWAT3"', '"dSGWAT4"', '"dSGWAT5"', '"dSGWAT6"', '"dSGWAT7"', '"dSGWAT8"', '"dWA1"', '"nLocationId"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"']
+Executing SQL: INSERT INTO elab.obaggregateiterations ("nelid", "nInvDetNo", "nAggDetailsId", "nObervationId", "tJobId", "nIterationNo", "tLocation", "tSieve", "dCVT1", "dCVT2", "dCVT3", "dCVT4", "dIVT1", "dIVT2", "dIVT3", "dIVT4", "dSGWAT1", "dSGWAT2", "dSGWAT3", "dSGWAT4", "dSGWAT5", "dSGWAT6", "dSGWAT7", "dSGWAT8", "dWA1", "nLocationId", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obaggregateiterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaggsieve
+48162
+processing table => obaggsieve
+['"nelid"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nNoOfSamples"', '"tLocation"', '"tRemark"', '"dtStartDate"', '"dtEndDate"', '"dtstamp"', '"tChkedBy"', '"tTestedBy"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obaggsieve ("nelid", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nNoOfSamples", "tLocation", "tRemark", "dtStartDate", "dtEndDate", "dtstamp", "tChkedBy", "tTestedBy", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervationId" of relation "obaggsieve" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaggsievedetails
+70745
+processing table => obaggsievedetails
+['"nelid"', '"nAggSieveDetailsId"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tFinalised"', '"tLocation"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obaggsievedetails ("nelid", "nAggSieveDetailsId", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nIterationNo", "tFinalised", "tLocation", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nAggSieveDetailsId" of relation "obaggsievedetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaggsieveiterations
+313364
+processing table => obaggsieveiterations
+['"nelid"', '"nInvDetNo"', '"nAggSieveDetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tSieve"', '"tLocation"', '"tSample"', '"tISSieve"', '"dwt1"', '"dwt2"', '"dwt3"', '"tSpecLimit"', '"dTotal"', '"tFinalised"', '"nLocationId"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"']
+Executing SQL: INSERT INTO elab.obaggsieveiterations ("nelid", "nInvDetNo", "nAggSieveDetailsId", "nObervationId", "tJobId", "nIterationNo", "tSieve", "tLocation", "tSample", "tISSieve", "dwt1", "dwt2", "dwt3", "tSpecLimit", "dTotal", "tFinalised", "nLocationId", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obaggsieveiterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaluminium
+678
+processing table => obaluminium
+['"nelId"', '"nObervartionId"', '"tJobId"', '"nInvDetNo"', '"dtReceiptDate"', '"tMaterial"', '"nTotSample"', '"ttrack"', '"dtStartDate"', '"dtEndDate"', '"tChkedBy"', '"tTestedBy"', '"tFinalised"', '"tEnteredBy"', '"tModifyBy"', '"dtstamp"', '"tDeleteStatus"', '"nLocationId"', '"tOutNo"', '"dtOutDate"']
+Executing SQL: INSERT INTO elab.obaluminium ("nelId", "nObervartionId", "tJobId", "nInvDetNo", "dtReceiptDate", "tMaterial", "nTotSample", "ttrack", "dtStartDate", "dtEndDate", "tChkedBy", "tTestedBy", "tFinalised", "tEnteredBy", "tModifyBy", "dtstamp", "tDeleteStatus", "nLocationId", "tOutNo", "dtOutDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervartionId" of relation "obaluminium" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaluminiumdetails
+702
+processing table => obaluminiumdetails
+['"nelId"', '"nObervartionId"', '"naluminiumdetailsId"', '"tJobId"', '"nInvDetNo"', '"dtReceiptDate"', '"nIterationNo"', '"tFinalised"', '"tEnteredBy"', '"tModifyBy"', '"dtstamp"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obaluminiumdetails ("nelId", "nObervartionId", "naluminiumdetailsId", "tJobId", "nInvDetNo", "dtReceiptDate", "nIterationNo", "tFinalised", "tEnteredBy", "tModifyBy", "dtstamp", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "naluminiumdetailsId" of relation "obaluminiumdetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obaluminiumiterations
+702
+processing table => obaluminiumiterations
+['"nelid"', '"nInvDetNo"', '"naluminiumdetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tType"', '"tDiamention"', '"dwt1"', '"dwt2"', '"dwt3"', '"twt4"', '"dt1"', '"tt2"', '"tStatus"', '"nLocationId"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"']
+Executing SQL: INSERT INTO elab.obaluminiumiterations ("nelid", "nInvDetNo", "naluminiumdetailsId", "nObervationId", "tJobId", "nIterationNo", "tType", "tDiamention", "dwt1", "dwt2", "dwt3", "twt4", "dt1", "tt2", "tStatus", "nLocationId", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obaluminiumiterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitudensity
+240
+processing table => obbitudensity
+['"nelid"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nNoOfSamples"', '"dWaxDensity"', '"dtStartDate"', '"dtEndDate"', '"dtstamp"', '"tChkedBy"', '"tTestedBy"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbitudensity ("nelid", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nNoOfSamples", "dWaxDensity", "dtStartDate", "dtEndDate", "dtstamp", "tChkedBy", "tTestedBy", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervationId" of relation "obbitudensity" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitudensitydetails
+1393
+processing table => obbitudensitydetails
+['"nelid"', '"nbituDensityDetailsId"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tFinalised"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbitudensitydetails ("nelid", "nbituDensityDetailsId", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nIterationNo", "tFinalised", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nbituDensityDetailsId" of relation "obbitudensitydetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitudensityiterations
+1393
+processing table => obbitudensityiterations
+['"nelid"', '"nInvDetNo"', '"nbituDensityDetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tMaterial"', '"tDetails"', '"dwt1"', '"dwt2"', '"dwt3"', '"dVol1"', '"dwt5"', '"dVol2"', '"dVol3"', '"dDensity"', '"tSpecified"', '"nLocationId"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"']
+Executing SQL: INSERT INTO elab.obbitudensityiterations ("nelid", "nInvDetNo", "nbituDensityDetailsId", "nObervationId", "tJobId", "nIterationNo", "tMaterial", "tDetails", "dwt1", "dwt2", "dwt3", "dVol1", "dwt5", "dVol2", "dVol3", "dDensity", "tSpecified", "nLocationId", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obbitudensityiterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbituext1
+6124
+processing table => obbituext1
+['"nelid"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"tMaterial"', '"nNoOfSamples"', '"dtStartDate"', '"dtEndDate"', '"dtstamp"', '"tChkedBy"', '"tTestedBy"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbituext1 ("nelid", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "tMaterial", "nNoOfSamples", "dtStartDate", "dtEndDate", "dtstamp", "tChkedBy", "tTestedBy", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervationId" of relation "obbituext1" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbituext1details
+14023
+processing table => obbituext1details
+['"nelid"', '"nbituextDetailsId"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tFinalised"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbituext1details ("nelid", "nbituextDetailsId", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nIterationNo", "tFinalised", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nbituextDetailsId" of relation "obbituext1details" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbituext1iterations
+14032
+processing table => obbituext1iterations
+['"nelid"', '"nInvDetNo"', '"nbituextDetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tLocation"', '"tMaterial"', '"dwt1"', '"dwt2"', '"dwt3"', '"dBinder"', '"tSpecified"', '"tRemark"', '"nLocationId"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"']
+Executing SQL: INSERT INTO elab.obbituext1iterations ("nelid", "nInvDetNo", "nbituextDetailsId", "nObervationId", "tJobId", "nIterationNo", "tLocation", "tMaterial", "dwt1", "dwt2", "dwt3", "dBinder", "tSpecified", "tRemark", "nLocationId", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obbituext1iterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitumarshalldensity
+0
+Processing table: obbitumarshalldensitydetails
+0
+Processing table: obbitumarshalldensityiterations
+0
+Processing table: obbitumen
+7245
+processing table => obbitumen
+['"nelid"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"tMaterial"', '"nNoOfSamples"', '"dtStartDate"', '"dtEndDate"', '"dtstamp"', '"tChkedBy"', '"tTestedBy"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbitumen ("nelid", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "tMaterial", "nNoOfSamples", "dtStartDate", "dtEndDate", "dtstamp", "tChkedBy", "tTestedBy", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervationId" of relation "obbitumen" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitumendetails
+10989
+processing table => obbitumendetails
+['"nelid"', '"nbitumenDetailsId"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tFinalised"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbitumendetails ("nelid", "nbitumenDetailsId", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nIterationNo", "tFinalised", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nbitumenDetailsId" of relation "obbitumendetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitumenductility
+0
+Processing table: obbitumenductilitydetails
+0
+Processing table: obbitumenductilityiterations
+0
+Processing table: obbitumeniterations
+10978
+processing table => obbitumeniterations
+['"nelid"', '"nInvDetNo"', '"nbitumenDetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tLocation"', '"tSieve"', '"tPB1"', '"tPB2"', '"tPB3"', '"dPB4"', '"dPBO1"', '"dPBO2"', '"dPBO3"', '"dPBAvg"', '"tFPT1"', '"tFPT2"', '"dFPT3"', '"dSGA"', '"dSGB"', '"dSGC"', '"dSGD"', '"dSGCA"', '"dSGBA"', '"dSGDC"', '"dSGBADC"', '"dSPResult"', '"DSP1"', '"DSP2"', '"dSP3"', '"dSP4"', '"dSP5"', '"dSP6"', '"DSP11"', '"DSP22"', '"DSP33"', '"DSP44"', '"DSP55"', '"DSP66"', '"DSPAvg"', '"tSpExtra1"', '"dSpExtra1"', '"tSpExtra2"', '"dSpExtra2"', '"dductility"', '"dductility1"', '"dductility2"', '"dductilityAvg"', '"tductilitySpec1"', '"tductilitySpec2"', '"tductilitySpec3"', '"nLocationId"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"']
+Executing SQL: INSERT INTO elab.obbitumeniterations ("nelid", "nInvDetNo", "nbitumenDetailsId", "nObervationId", "tJobId", "nIterationNo", "tLocation", "tSieve", "tPB1", "tPB2", "tPB3", "dPB4", "dPBO1", "dPBO2", "dPBO3", "dPBAvg", "tFPT1", "tFPT2", "dFPT3", "dSGA", "dSGB", "dSGC", "dSGD", "dSGCA", "dSGBA", "dSGDC", "dSGBADC", "dSPResult", "DSP1", "DSP2", "dSP3", "dSP4", "dSP5", "dSP6", "DSP11", "DSP22", "DSP33", "DSP44", "DSP55", "DSP66", "DSPAvg", "tSpExtra1", "dSpExtra1", "tSpExtra2", "dSpExtra2", "dductility", "dductility1", "dductility2", "dductilityAvg", "tductilitySpec1", "tductilitySpec2", "tductilitySpec3", "nLocationId", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obbitumeniterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitumenviscosity
+1490
+processing table => obbitumenviscosity
+['"nelid"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"tMaterial"', '"nNoOfSamples"', '"dtStartDate"', '"dtEndDate"', '"dtstamp"', '"tChkedBy"', '"tTestedBy"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbitumenviscosity ("nelid", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "tMaterial", "nNoOfSamples", "dtStartDate", "dtEndDate", "dtstamp", "tChkedBy", "tTestedBy", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervationId" of relation "obbitumenviscosity" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitumenviscositydetails
+2014
+processing table => obbitumenviscositydetails
+['"nelid"', '"nbitumenViscosityDetailsId"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tFinalised"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbitumenviscositydetails ("nelid", "nbitumenViscosityDetailsId", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nIterationNo", "tFinalised", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nbitumenViscosityDetailsId" of relation "obbitumenviscositydetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitumenviscosityiterations
+2015
+processing table => obbitumenviscosityiterations
+['"nelid"', '"nInvDetNo"', '"nbitumenViscosityDetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tSpExtra1"', '"dSpExtra1"', '"tSpExtra2"', '"dSpExtra2"', '"nLocationId"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"']
+Executing SQL: INSERT INTO elab.obbitumenviscosityiterations ("nelid", "nInvDetNo", "nbitumenViscosityDetailsId", "nObervationId", "tJobId", "nIterationNo", "tSpExtra1", "dSpExtra1", "tSpExtra2", "dSpExtra2", "nLocationId", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obbitumenviscosityiterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitumix
+750
+processing table => obbitumix
+['"nelid"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nNoOfSamples"', '"tExtract"', '"dtStartDate"', '"dtEndDate"', '"dtstamp"', '"tChkedBy"', '"tTestedBy"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbitumix ("nelid", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nNoOfSamples", "tExtract", "dtStartDate", "dtEndDate", "dtstamp", "tChkedBy", "tTestedBy", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervationId" of relation "obbitumix" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitumixdetails
+1574
+processing table => obbitumixdetails
+['"nelid"', '"nbitumixDetailsId"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tFinalised"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbitumixdetails ("nelid", "nbitumixDetailsId", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nIterationNo", "tFinalised", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nbitumixDetailsId" of relation "obbitumixdetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitumixext2iterations
+3142
+processing table => obbitumixext2iterations
+['"nelid"', '"nInvDetNo"', '"nbitumixDetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tMaterial"', '"tLocation"', '"dwt1"', '"dwt2"', '"dTotal"', '"dwt3"', '"dBinder"', '"dBinderAvg"', '"tRemark"', '"nLocationId"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"']
+Executing SQL: INSERT INTO elab.obbitumixext2iterations ("nelid", "nInvDetNo", "nbitumixDetailsId", "nObervationId", "tJobId", "nIterationNo", "tMaterial", "tLocation", "dwt1", "dwt2", "dTotal", "dwt3", "dBinder", "dBinderAvg", "tRemark", "nLocationId", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obbitumixext2iterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitumixsieveiterations
+14476
+processing table => obbitumixsieveiterations
+['"nelid"', '"nInvDetNo"', '"nbitumixDetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tMetalSize"', '"tExtract"', '"tSieve"', '"dwt1"', '"dwt2"', '"dwt3"', '"tSpecLimit"', '"dtotal"', '"tFinalised"', '"nLocationId"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"']
+Executing SQL: INSERT INTO elab.obbitumixsieveiterations ("nelid", "nInvDetNo", "nbitumixDetailsId", "nObervationId", "tJobId", "nIterationNo", "tMetalSize", "tExtract", "tSieve", "dwt1", "dwt2", "dwt3", "tSpecLimit", "dtotal", "tFinalised", "nLocationId", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obbitumixsieveiterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbitusieveiterations
+0
+Processing table: obbmjobmix
+792
+processing table => obbmjobmix
+['"nelid"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nNoOfSamples"', '"tMaterial"', '"tGradeName"', '"Materials"', '"tRemark"', '"dtStartDate"', '"dtEndDate"', '"dtstamp"', '"tChkedBy"', '"tTestedBy"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbmjobmix ("nelid", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nNoOfSamples", "tMaterial", "tGradeName", "Materials", "tRemark", "dtStartDate", "dtEndDate", "dtstamp", "tChkedBy", "tTestedBy", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervationId" of relation "obbmjobmix" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbmjobmixdetails
+874
+processing table => obbmjobmixdetails
+['"nelid"', '"nBMJobMixDetailsId"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tGradeName"', '"Materials"', '"dRecMix1"', '"dRecMix2"', '"dRecMix3"', '"dRecMix4"', '"dWaterAb"', '"dImpactValue"', '"dCFEIndex"', '"dStripingValue"', '"dExtra1"', '"dExtra2"', '"tFinalised"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbmjobmixdetails ("nelid", "nBMJobMixDetailsId", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nIterationNo", "tGradeName", "Materials", "dRecMix1", "dRecMix2", "dRecMix3", "dRecMix4", "dWaterAb", "dImpactValue", "dCFEIndex", "dStripingValue", "dExtra1", "dExtra2", "tFinalised", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nBMJobMixDetailsId" of relation "obbmjobmixdetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbmjobmixiterations
+6955
+processing table => obbmjobmixiterations
+['"nelid"', '"nInvDetNo"', '"nBMJobMixDetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tSieve"', '"dM1"', '"dM2"', '"dM3"', '"dM4"', '"dPassing"', '"tSpecifiedLimit"', '"tFinalised"', '"nLocationId"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"']
+Executing SQL: INSERT INTO elab.obbmjobmixiterations ("nelid", "nInvDetNo", "nBMJobMixDetailsId", "nObervationId", "tJobId", "nIterationNo", "tSieve", "dM1", "dM2", "dM3", "dM4", "dPassing", "tSpecifiedLimit", "tFinalised", "nLocationId", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obbmjobmixiterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbricks
+3189
+processing table => obbricks
+['"nelid"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nNoOfSamples"', '"tIdMark"', '"dtStartDate"', '"dtEndDate"', '"dtstamp"', '"tChkedBy"', '"tTestedBy"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbricks ("nelid", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nNoOfSamples", "tIdMark", "dtStartDate", "dtEndDate", "dtstamp", "tChkedBy", "tTestedBy", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObervationId" of relation "obbricks" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbricksdetails
+3291
+processing table => obbricksdetails
+['"nelid"', '"nbricksDetailsId"', '"dtReceiptDate"', '"nInvDetNo"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"tFinalised"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obbricksdetails ("nelid", "nbricksDetailsId", "dtReceiptDate", "nInvDetNo", "nObervationId", "tJobId", "nIterationNo", "tFinalised", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nbricksDetailsId" of relation "obbricksdetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obbricksiterations
+16435
+processing table => obbricksiterations
+['"nelid"', '"nInvDetNo"', '"nbricksDetailsId"', '"nObervationId"', '"tJobId"', '"nIterationNo"', '"nWAT1"', '"tWAT2"', '"dWAT3"', '"dWAT4"', '"dWAT5"', '"dWAT6"', '"tWAT7"', '"tWAT8"', '"dAvg"', '"nCS1"', '"tCS2"', '"tUnit"', '"dCS3"', '"dCS4"', '"dCS5"', '"dCS6"', '"dCS7"', '"tCS8"', '"tCS9"', '"tBDS"', '"tEff"', '"tFinalised"', '"nLocationId"', '"tRemark"', '"dtstamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"']
+Executing SQL: INSERT INTO elab.obbricksiterations ("nelid", "nInvDetNo", "nbricksDetailsId", "nObervationId", "tJobId", "nIterationNo", "nWAT1", "tWAT2", "dWAT3", "dWAT4", "dWAT5", "dWAT6", "tWAT7", "tWAT8", "dAvg", "nCS1", "tCS2", "tUnit", "dCS3", "dCS4", "dCS5", "dCS6", "dCS7", "tCS8", "tCS9", "tBDS", "tEff", "tFinalised", "nLocationId", "tRemark", "dtstamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obbricksiterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obcementtest
+8103
+processing table => obcementtest
+['"nelid"', '"nObservationId"', '"nInvDetNo"', '"tJobId"', '"dtReceiptDate"', '"nNoOfSamples"', '"tMaterialName"', '"dtEndDate"', '"dtStartDate"', '"tCheckedBy"', '"tTestedBy"', '"nLocationId"', '"dtStamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"']
+Executing SQL: INSERT INTO elab.obcementtest ("nelid", "nObservationId", "nInvDetNo", "tJobId", "dtReceiptDate", "nNoOfSamples", "tMaterialName", "dtEndDate", "dtStartDate", "tCheckedBy", "tTestedBy", "nLocationId", "dtStamp", "tEnterBy", "tModifyBy", "tDeleteStatus") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObservationId" of relation "obcementtest" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obcementtestcompstrenght
+94356
+processing table => obcementtestcompstrenght
+['"nelId"', '"ncementdetailsId"', '"nInvDetId"', '"nObservationId"', '"tJobId"', '"nIterationNo"', '"nWtOfCement"', '"nSand"', '"dWaterCC"', '"tIdentificationMark"', '"dtCastingDate"', '"dtTestingDate"', '"nCurryingPeriod"', '"nCrossSection"', '"dLoad"', '"dStrength"', '"dAvg"', '"tSampleStatus"', '"dtStamp"', '"nLocationId"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtEndDate"', '"dtStartDate"']
+Executing SQL: INSERT INTO elab.obcementtestcompstrenght ("nelId", "ncementdetailsId", "nInvDetId", "nObservationId", "tJobId", "nIterationNo", "nWtOfCement", "nSand", "dWaterCC", "tIdentificationMark", "dtCastingDate", "dtTestingDate", "nCurryingPeriod", "nCrossSection", "dLoad", "dStrength", "dAvg", "tSampleStatus", "dtStamp", "nLocationId", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtEndDate", "dtStartDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelId" of relation "obcementtestcompstrenght" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obcementtestconsistancy
+31452
+processing table => obcementtestconsistancy
+['"nelid"', '"ncementdetailsId"', '"nInvDetId"', '"tJobId"', '"nIterationNo"', '"nTrialNo"', '"dWt_for_Test_gm"', '"dWaterAdded"', '"dwaterPercent"', '"dvacate_Reading"', '"dConsist_infe"', '"tRemarks"', '"dtstamp"', '"nLocationId"', '"tEnterby"', '"tModifyBy"', '"tDeleteStatus"', '"dtEndDate"', '"dtStartDate"']
+Executing SQL: INSERT INTO elab.obcementtestconsistancy ("nelid", "ncementdetailsId", "nInvDetId", "tJobId", "nIterationNo", "nTrialNo", "dWt_for_Test_gm", "dWaterAdded", "dwaterPercent", "dvacate_Reading", "dConsist_infe", "tRemarks", "dtstamp", "nLocationId", "tEnterby", "tModifyBy", "tDeleteStatus", "dtEndDate", "dtStartDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obcementtestconsistancy" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obcementtestdetails
+10535
+processing table => obcementtestdetails
+['"nelid"', '"ncementdetailsId"', '"nObervationId"', '"nInvDetNo"', '"tJobId"', '"nIterationNo"', '"nLocationId"', '"tFinalised"', '"tChkedBy"', '"tTestedBy"', '"dtStamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"']
+Executing SQL: INSERT INTO elab.obcementtestdetails ("nelid", "ncementdetailsId", "nObervationId", "nInvDetNo", "tJobId", "nIterationNo", "nLocationId", "tFinalised", "tChkedBy", "tTestedBy", "dtStamp", "tEnterBy", "tModifyBy", "tDeleteStatus") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "ncementdetailsId" of relation "obcementtestdetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obcementtestfitness
+31452
+processing table => obcementtestfitness
+['"NelId"', '"ncementdetailsId"', '"nInvDetId"', '"nObservationId"', '"tJobid"', '"nIterationNo"', '"ntrailNo"', '"dWtBeforeSieveing"', '"tTimeOfSieving"', '"dWtRetainAfter"', '"dResidue"', '"dAvg_Residue"', '"tSpecifications"', '"dtstamp"', '"nLocationId"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtEndDate"', '"dtStartDate"']
+Executing SQL: INSERT INTO elab.obcementtestfitness ("NelId", "ncementdetailsId", "nInvDetId", "nObservationId", "tJobid", "nIterationNo", "ntrailNo", "dWtBeforeSieveing", "tTimeOfSieving", "dWtRetainAfter", "dResidue", "dAvg_Residue", "tSpecifications", "dtstamp", "nLocationId", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtEndDate", "dtStartDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "NelId" of relation "obcementtestfitness" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obcementtestsettingtime
+10484
+processing table => obcementtestsettingtime
+['"nelid"', '"ncementdetailsId"', '"nInvDetId"', '"nObservationId"', '"tJobId"', '"nIterationNo"', '"ntrailNo"', '"dWtForTestGm"', '"dWaterReq"', '"ttTimeOfWater"', '"nSettingtimeInitial"', '"nSettingtimeFinal"', '"nResultSettimeInitial"', '"nResultSettimeFinal"', '"tRemarks"', '"dtStamp"', '"nLocationId"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtEndDate"', '"dtStartDate"']
+Executing SQL: INSERT INTO elab.obcementtestsettingtime ("nelid", "ncementdetailsId", "nInvDetId", "nObservationId", "tJobId", "nIterationNo", "ntrailNo", "dWtForTestGm", "dWaterReq", "ttTimeOfWater", "nSettingtimeInitial", "nSettingtimeFinal", "nResultSettimeInitial", "nResultSettimeFinal", "tRemarks", "dtStamp", "nLocationId", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtEndDate", "dtStartDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obcementtestsettingtime" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obcementtestsoundness
+20968
+processing table => obcementtestsoundness
+['"nelid"', '"ncementdetailsId"', '"nInvDetId"', '"nObservationId"', '"tJobId"', '"nIterationNo"', '"tSpec1"', '"tspec2"', '"ntrailNo"', '"dAfterImmer1"', '"dAfterImmer2"', '"dDifference"', '"dAvgDiff"', '"tSpecied"', '"dtStamp"', '"nLocationId"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtEndDate"', '"dtStartDate"']
+Executing SQL: INSERT INTO elab.obcementtestsoundness ("nelid", "ncementdetailsId", "nInvDetId", "nObservationId", "tJobId", "nIterationNo", "tSpec1", "tspec2", "ntrailNo", "dAfterImmer1", "dAfterImmer2", "dDifference", "dAvgDiff", "tSpecied", "dtStamp", "nLocationId", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtEndDate", "dtStartDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obcementtestsoundness" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obcementtestspecgravity
+10484
+processing table => obcementtestspecgravity
+['"nelid"', '"ncementdetailsId"', '"nInvDetId"', '"nObservationId"', '"tJobId"', '"nIteratioNo"', '"nSrNo1"', '"nSrNo2"', '"nSrNo3"', '"nSrNo4"', '"nSrNo5"', '"nSrNo6"', '"dtStamp"', '"nLocationId"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtEndDate"', '"dtStartDate"']
+Executing SQL: INSERT INTO elab.obcementtestspecgravity ("nelid", "ncementdetailsId", "nInvDetId", "nObservationId", "tJobId", "nIteratioNo", "nSrNo1", "nSrNo2", "nSrNo3", "nSrNo4", "nSrNo5", "nSrNo6", "dtStamp", "nLocationId", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtEndDate", "dtStartDate") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelid" of relation "obcementtestspecgravity" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obconcretecore
+4
+processing table => obconcretecore
+['"nelid"', '"nObservationId"', '"nInvDetNo"', '"tJobId"', '"dtReceiptDate"', '"nNoOfSamples"', '"tMaterialName"', '"tUnit"', '"dtStartDate"', '"dtEndDate"', '"tCheckedBy"', '"tTestedBy"', '"nLocationId"', '"dtStamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"']
+Executing SQL: INSERT INTO elab.obconcretecore ("nelid", "nObservationId", "nInvDetNo", "tJobId", "dtReceiptDate", "nNoOfSamples", "tMaterialName", "tUnit", "dtStartDate", "dtEndDate", "tCheckedBy", "tTestedBy", "nLocationId", "dtStamp", "tEnterBy", "tModifyBy", "tDeleteStatus") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nObservationId" of relation "obconcretecore" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obconcretecoredetails
+8
+processing table => obconcretecoredetails
+['"nelid"', '"nconcretecoredetailsId"', '"nObervationId"', '"nInvDetNo"', '"tJobId"', '"nIterationNo"', '"tFinalised"', '"tChkedBy"', '"tTestedBy"', '"dtStamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"nLocationId"']
+Executing SQL: INSERT INTO elab.obconcretecoredetails ("nelid", "nconcretecoredetailsId", "nObervationId", "nInvDetNo", "tJobId", "nIterationNo", "tFinalised", "tChkedBy", "tTestedBy", "dtStamp", "tEnterBy", "tModifyBy", "tDeleteStatus", "nLocationId") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nconcretecoredetailsId" of relation "obconcretecoredetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obconcretecoreiterations
+8
+processing table => obconcretecoreiterations
+['"nelId"', '"nconcretecoredetailsId"', '"nInvDetNo"', '"nObservationId"', '"tJobId"', '"nIterationNo"', '"tLocation"', '"dtReceiptDate"', '"tIdentificationMark"', '"dtDateCasting"', '"dtTestingDate"', '"tGradeOfCon"', '"diameter"', '"height"', '"wtOfCore"', '"csArea"', '"maxLoad"', '"compStrength"', '"hdRatio"', '"loadFactor"', '"trueCompStrength"', '"tFinalised"', '"tRemark"', '"dtStamp"', '"nLocationId"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"', '"dtStartDate"', '"dtEndDate"', '"equivalentCubeStrength"']
+Executing SQL: INSERT INTO elab.obconcretecoreiterations ("nelId", "nconcretecoredetailsId", "nInvDetNo", "nObservationId", "tJobId", "nIterationNo", "tLocation", "dtReceiptDate", "tIdentificationMark", "dtDateCasting", "dtTestingDate", "tGradeOfCon", "diameter", "height", "wtOfCore", "csArea", "maxLoad", "compStrength", "hdRatio", "loadFactor", "trueCompStrength", "tFinalised", "tRemark", "dtStamp", "nLocationId", "tEnterBy", "tModifyBy", "tDeleteStatus", "dtStartDate", "dtEndDate", "equivalentCubeStrength") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nelId" of relation "obconcretecoreiterations" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obconcretecubedetails
+62365
+processing table => obconcretecubedetails
+['"nelid"', '"nconcretedetailsId"', '"nObervationId"', '"nInvDetNo"', '"tJobId"', '"nIterationNo"', '"nLocationId"', '"tFinalised"', '"tChkedBy"', '"tTestedBy"', '"dtStamp"', '"tEnterBy"', '"tModifyBy"', '"tDeleteStatus"']
+Executing SQL: INSERT INTO elab.obconcretecubedetails ("nelid", "nconcretedetailsId", "nObervationId", "nInvDetNo", "tJobId", "nIterationNo", "nLocationId", "tFinalised", "tChkedBy", "tTestedBy", "dtStamp", "tEnterBy", "tModifyBy", "tDeleteStatus") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+Parameters: (None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Error executing SQL: null value in column "nconcretedetailsId" of relation "obconcretecubedetails" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+
+Processing table: obconcretecubeiterationdetails
+Finished Migrating
